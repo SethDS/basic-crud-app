@@ -5,7 +5,7 @@ var massive = require('massive');
 var config = require('./config');
 
 var app = module.exports = express();
-app.use(express.static('./front-end'));
+app.use(express.static('../front-end'));
 app.use(bodyParser.json());
 
 var massiveUri = config.MASSIVE_URI;
@@ -14,7 +14,7 @@ var massiveServer = massive.connectSync({
 });
 
 app.set('db', massiveServer);
-app.get('./db');
+app.get('db');
 
 var mainCtrl = require('./controllers/main-controller');
 

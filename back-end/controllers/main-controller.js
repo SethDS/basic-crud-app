@@ -6,8 +6,9 @@ var db = app.get('db');
 
 module.exports = {
   addWatch: function(req, res, next){
+      console.log(req.body);
       db.add_watch([
-            req.body.watchMake,
+          req.body.watchMake,
           req.body.watchModel,
           req.body.watchDescription,
           req.body.watchImage

@@ -20,6 +20,8 @@ angular.module('myApp').controller('mainCtrl', function($scope, mainService){
     $scope.deleteWatch = function (id) {
         mainService.deleteWatch(id).then(function (response) {
             alert(response);
+
+            $scope.getWatches();
         })
     }
 

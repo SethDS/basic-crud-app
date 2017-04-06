@@ -33,7 +33,8 @@ module.exports = {
     },  //end of getWatches function
 
     deleteWatch: function(req, res, next){
-        console.log('Deleting watch number ' + req.body.watch_id + '...');
+        console.log(req.body.watch_id);
+        // console.log('Deleting watch number ' + req.body.watch_id + '...');
         db.delete_watch([
             req.body.watch_id
         ], function(err, results){

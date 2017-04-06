@@ -24,20 +24,20 @@ angular.module('myApp').service('mainService', function($http){
         }).then(function(response){
             return response
         })
-    }
+    };
 
-    this.deleteWatch = function(id){
-        console.log('Deleting watch number ' + id + '...');
+    this.deleteWatch = function(watchId){
+        console.log('Deleting watch number ' + watchId + '...');
 
         return $http({
             method: 'DELETE',
             url: '/api/deleteWatch',
             data: {
-                watch_id: id
+                watch_id: watchId
             }
         }).then(function(response){
             return response
         })
-    }
+    };
 
 });

@@ -18,7 +18,10 @@ app.get('db');
 
 var mainCtrl = require('./controllers/main-controller');
 
-app.post('/api/addWatch', mainCtrl.addWatch);
+app.post('/api/addWatch', mainCtrl.addWatch); //add new watch
+app.get('/api/getWatches', mainCtrl.getWatches); //get ALL watches
+
+app.delete('/api/deleteWatch', mainCtrl.deleteWatch); //delete a watch
 
 app.listen(config.PORT, function() {
     console.log('Listening on port 8080...');

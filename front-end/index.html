@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+
+<head>
+    <title>Basic CRUD app</title>
+    <link rel="stylesheet" href="stylsheet.css">
+    <link href="https://fonts.googleapis.com/css?family=Pinyon+Script" rel="stylesheet">
+</head>
+
+<body ng-controller="mainCtrl">
+
+<div class="main-container">
+    <img class="background" src="./img/frank-park-39270.jpg">
+    <!--<header>-->
+        <!--<h2 class="heading">My Watch Collection</h2>-->
+    <!--</header>-->
+    <nav>
+        <ul>
+            <li>watches</li>
+            <li>add a new watch</li>
+        </ul>
+    </nav>
+    <div class="main-content">
+        <div class="add-watch">
+            <h4>Add Watch</h4>
+            <form>
+                <input type="text" placeholder="watch make" ng-model="newWatch.make"><br>
+                <input type="text" placeholder="watch model" ng-model="newWatch.model"><br>
+                <input type="text" placeholder="description" ng-model="newWatch.description"><br>
+                <input type="text" placeholder="image link" ng-model="newWatch.imageLink"><br>
+                <button ng-click="addWatch(newWatch)">Add Watch</button>
+
+            </form>
+        </div>
+        <div class="watches">
+            <h2 class="view-watches" ng-click="getWatches()">View Watches</h2>
+            <ul ng-repeat="watch in watches">
+            <li>
+                <h5>{{watch.make}}</h5><br>
+                <h6>{{watch.model}}</h6><br>
+                <p>{{watch.description}}</p><br>
+                <img src="{{watch.image_link}}"><br>
+                <button ng-click="deleteWatch({{watch.watch_id}})">Delete this watch</button><br>
+                <h6>Edit Watch Info</h6>
+            </li>
+        </ul>
+        </div>
+    </div>
+
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.js"></script>
+<script src="app.js"></script>
+<script src="controller.js"></script>
+<script src="service.js"></script>
+</body>
+
+</html>

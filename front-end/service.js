@@ -32,7 +32,7 @@ angular.module('myApp').service('mainService', function($http){
         return $http({
             method: 'DELETE',
             url: '/api/deleteWatch',
-            data: {
+            headers : {
                 watch_id: watchId
             }
         }).then(function(response){

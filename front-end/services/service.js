@@ -40,4 +40,19 @@ angular.module('myApp').service('mainService', function($http){
         })
     };
 
+    this.changeWatchInfo = function(id, info){
+        console.log('Changing watch info...');
+
+        return $http({
+            method: 'PUT',
+            url: '/api/changeWatchInfo',
+            data: {
+                id: id,
+                info: info
+            }
+        }).then(function(response){
+            return response
+        })
+    };
+
 });

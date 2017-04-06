@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b47758c-4a86-4f4a-974b-8783efd2c6df" name="Default" comment="">
+      <change type="MOVED" beforePath="$PROJECT_DIR$/front-end/controller.js" afterPath="$PROJECT_DIR$/front-end/controllers/controller.js" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/front-end/service.js" afterPath="$PROJECT_DIR$/front-end/services/service.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/controllers/main-controller.js" afterPath="$PROJECT_DIR$/back-end/controllers/main-controller.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/db/add_watch.sql" afterPath="$PROJECT_DIR$/back-end/db/add_watch.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/db/delete_watch.sql" afterPath="$PROJECT_DIR$/back-end/db/delete_watch.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/controller.js" afterPath="$PROJECT_DIR$/front-end/controller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/service.js" afterPath="$PROJECT_DIR$/front-end/service.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/db/edit_watch.sql" afterPath="$PROJECT_DIR$/back-end/db/edit_watch.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/db/get_watches.sql" afterPath="$PROJECT_DIR$/back-end/db/get_watches.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/back-end/server.js" afterPath="$PROJECT_DIR$/back-end/server.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/app.js" afterPath="$PROJECT_DIR$/front-end/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/front-end/index.html" afterPath="$PROJECT_DIR$/front-end/index.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,41 +29,24 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.45973647">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="controller.js" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/front-end/controller.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="440">
-                  <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="delete_watch.sql" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/back-end/db/delete_watch.sql">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="20">
-                  <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/front-end/app.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -75,15 +64,20 @@
         <option value="$PROJECT_DIR$/back-end/.gitignore" />
         <option value="$PROJECT_DIR$/back-end/config.js" />
         <option value="$PROJECT_DIR$/back-end/package.json" />
-        <option value="$PROJECT_DIR$/back-end/db/add_watch.sql" />
-        <option value="$PROJECT_DIR$/back-end/db/get_watches.sql" />
         <option value="$PROJECT_DIR$/front-end/stylsheet.css" />
-        <option value="$PROJECT_DIR$/front-end/index.html" />
-        <option value="$PROJECT_DIR$/back-end/server.js" />
-        <option value="$PROJECT_DIR$/front-end/service.js" />
-        <option value="$PROJECT_DIR$/back-end/db/delete_watch.sql" />
-        <option value="$PROJECT_DIR$/back-end/controllers/main-controller.js" />
         <option value="$PROJECT_DIR$/front-end/controller.js" />
+        <option value="$PROJECT_DIR$/front-end/service.js" />
+        <option value="$PROJECT_DIR$/back-end/db/get_watches.sql" />
+        <option value="$PROJECT_DIR$/back-end/controllers/main-controller.js" />
+        <option value="$PROJECT_DIR$/back-end/db/edit_watch.sql" />
+        <option value="$PROJECT_DIR$/back-end/db/delete_watch.sql" />
+        <option value="$PROJECT_DIR$/back-end/db/add_watch.sql" />
+        <option value="$PROJECT_DIR$/back-end/server.js" />
+        <option value="$PROJECT_DIR$/front-end/views/collection.html" />
+        <option value="$PROJECT_DIR$/front-end/views/manage.html" />
+        <option value="$PROJECT_DIR$/front-end/views/home.html" />
+        <option value="$PROJECT_DIR$/front-end/app.js" />
+        <option value="$PROJECT_DIR$/front-end/index.html" />
       </list>
     </option>
   </component>
@@ -143,6 +137,42 @@
               <option name="myItemId" value="basic-crud-app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front-end" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="services" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic-crud-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic-crud-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="front-end" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic-crud-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="basic-crud-app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -159,9 +189,12 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="prop_add_unversioned_files" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Seth\Documents\Coding\Assessments\basic-crud-app\front-end\services" />
+      <recent name="C:\Users\Seth\Documents\Coding\Assessments\basic-crud-app\front-end\controllers" />
       <recent name="C:\Users\Seth\Documents\Coding\Assessments\basic-crud-app\back-end" />
       <recent name="C:\Users\Seth\Documents\Coding\Assessments\basic-crud-app\front-end" />
     </key>
@@ -224,6 +257,9 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3b47758c-4a86-4f4a-974b-8783efd2c6df" name="Default" comment="" />
@@ -231,18 +267,18 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491425231386</updated>
-      <workItem from="1491425232862" duration="20457000" />
+      <workItem from="1491425232862" duration="26349000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20457000" />
+    <option name="totallyTimeSpent" value="26349000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="41" width="1384" height="736" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.238653" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22986823" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -281,14 +317,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/back-end/db/edit_watch.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back-end/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -302,14 +330,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="28" lean-forward="false" selection-start-line="0" selection-start-column="28" selection-end-line="0" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/back-end/config.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -317,6 +337,180 @@
           <folding>
             <marker date="1491431802619" expanded="true" signature="17:111" ph="{&quot;MASSIVE_URI&quot;: &quot;postgres://postgres:Maklumat@localhost/watch_collection&quot;...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/controllers/controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="106">
+          <caret line="22" column="6" lean-forward="true" selection-start-line="22" selection-start-column="6" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <marker date="1491514717699" expanded="true" signature="76:1361" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="139:278" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="225:271" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="341:664" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="442:657" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="546:612" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="706:929" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="769:922" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="810:878" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="971:1183" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="1027:1177" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="1078:1167" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="1235:1358" ph="{...}" />
+            <marker date="1491514717699" expanded="true" signature="1306:1351" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/services/service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="34" column="23" lean-forward="true" selection-start-line="34" selection-start-column="23" selection-end-line="34" selection-end-column="23" />
+          <folding>
+            <marker date="1491514717648" expanded="true" signature="62:1461" ph="{...}" />
+            <marker date="1491514717648" expanded="true" signature="98:495" ph="{...}" />
+            <marker date="1491514717648" expanded="true" signature="148:424" ph="{&quot;method&quot;: 'POST'...}" />
+            <marker date="1491514717648" expanded="true" signature="230:414" ph="{&quot;watchMake&quot;: obj.make...}" />
+            <marker date="1491514717648" expanded="true" signature="449:488" ph="{...}" />
+            <marker date="1491514717648" expanded="true" signature="532:750" ph="{...}" />
+            <marker date="1491514717648" expanded="true" signature="606:679" ph="{&quot;method&quot;: 'GET'...}" />
+            <marker date="1491514717648" expanded="true" signature="704:743" ph="{...}" />
+            <marker date="1491514717648" expanded="true" signature="793:1103" ph="{...}" />
+            <marker date="1491514717648" expanded="true" signature="882:1032" ph="{&quot;method&quot;: 'DELETE'...}" />
+            <marker date="1491514717648" expanded="true" signature="973:1022" ph="{&quot;watch_id&quot;: watchId...}" />
+            <marker date="1491514717648" expanded="true" signature="1057:1096" ph="{...}" />
+            <marker date="1491514717648" expanded="true" signature="1151:1457" ph="{...}" />
+            <marker date="1491514717648" expanded="true" signature="1222:1386" ph="{&quot;method&quot;: 'PUT'...}" />
+            <marker date="1491514717648" expanded="true" signature="1310:1376" ph="{&quot;id&quot;: id...}" />
+            <marker date="1491514717648" expanded="true" signature="1411:1450" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/db/delete_watch.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/db/edit_watch.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="13" lean-forward="false" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/db/add_watch.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20">
+          <caret line="1" column="44" lean-forward="false" selection-start-line="1" selection-start-column="44" selection-end-line="1" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/db/get_watches.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="2" column="29" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/controllers/main-controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="38" column="23" lean-forward="false" selection-start-line="38" selection-start-column="16" selection-end-line="38" selection-end-column="23" />
+          <folding>
+            <marker date="1491516159556" expanded="false" signature="0:39" ph="/** Created by Seth on 4/5/2017. ...*/" />
+            <marker date="1491516159556" expanded="true" signature="114:2011" ph="{...}" />
+            <marker date="1491516159556" expanded="true" signature="152:565" ph="{...}" />
+            <marker date="1491516159556" expanded="true" signature="202:339" ph="[...]" />
+            <marker date="1491516159556" expanded="true" signature="363:560" ph="{...}" />
+            <marker date="1491516159556" expanded="true" signature="382:504" ph="{...}" />
+            <marker date="1491516159556" expanded="true" signature="637:976" ph="{...}" />
+            <marker date="1491516159556" expanded="true" signature="739:969" ph="{...}" />
+            <marker date="1491516159556" expanded="true" signature="764:904" ph="{...}" />
+            <marker date="1491516159556" expanded="true" signature="1050:1482" ph="{...}" />
+            <marker date="1491516159556" expanded="true" signature="1197:1241" ph="[...]" />
+            <marker date="1491516159556" expanded="true" signature="1265:1475" ph="{...}" />
+            <marker date="1491516159556" expanded="true" signature="1286:1415" ph="{...}" />
+            <marker date="1491516159556" expanded="true" signature="1562:2008" ph="{...}" />
+            <marker date="1491516159556" expanded="true" signature="1671:1733" ph="[...]" />
+            <marker date="1491516159556" expanded="true" signature="1757:2001" ph="{...}" />
+            <marker date="1491516159556" expanded="true" signature="1778:1906" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/back-end/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="20" />
+          <folding>
+            <marker date="1491514717743" expanded="true" signature="330:366" ph="{&quot;connectionString&quot;: massiveUri...}" />
+            <marker date="1491514717743" expanded="true" signature="791:840" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/views/manage.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/views/collection.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/views/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="27" lean-forward="false" selection-start-line="0" selection-start-column="27" selection-end-line="0" selection-end-column="27" />
+          <folding>
+            <marker date="1491519213276" expanded="true" signature="27:2062" ph="..." />
+            <marker date="1491519213276" expanded="true" signature="196:300" ph="..." />
+            <marker date="1491519213276" expanded="true" signature="209:289" ph="..." />
+            <marker date="1491519213276" expanded="true" signature="331:2054" ph="..." />
+            <marker date="1491519213276" expanded="true" signature="363:897" ph="..." />
+            <marker date="1491519213276" expanded="true" signature="413:882" ph="..." />
+            <marker date="1491519213276" expanded="true" signature="927:2043" ph="..." />
+            <marker date="1491519213276" expanded="true" signature="1052:2028" ph="..." />
+            <marker date="1491519213276" expanded="true" signature="1073:2010" ph="..." />
+            <marker date="1491519213276" expanded="true" signature="1414:1890" ph="..." />
+            <marker date="1491519213276" expanded="true" signature="1442:1504" ph="..." />
+            <marker date="1491519213276" expanded="true" signature="1630:1863" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="20" column="43" lean-forward="true" selection-start-line="20" selection-start-column="43" selection-end-line="20" selection-end-column="43" />
+          <folding>
+            <marker date="1491519213347" expanded="true" signature="36:775" ph="..." />
+            <marker date="1491519213347" expanded="true" signature="44:224" ph="..." />
+            <marker date="1491519213347" expanded="true" signature="232:766" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/front-end/npm-debug.log">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -334,109 +528,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/index.html">
+    <entry file="file://$PROJECT_DIR$/front-end/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="28" column="33" lean-forward="false" selection-start-line="28" selection-start-column="33" selection-end-line="28" selection-end-column="33" />
-          <folding>
-            <marker date="1491502961846" expanded="true" signature="36:2022" ph="..." />
-            <marker date="1491502961846" expanded="true" signature="44:224" ph="..." />
-            <marker date="1491502961846" expanded="true" signature="257:2013" ph="..." />
-            <marker date="1491502961846" expanded="true" signature="287:1725" ph="..." />
-            <marker date="1491502961846" expanded="true" signature="460:564" ph="..." />
-            <marker date="1491502961846" expanded="true" signature="473:553" ph="..." />
-            <marker date="1491502961846" expanded="true" signature="595:1717" ph="..." />
-            <marker date="1491502961846" expanded="true" signature="627:1161" ph="..." />
-            <marker date="1491502961846" expanded="true" signature="677:1146" ph="..." />
-            <marker date="1491502961846" expanded="true" signature="1191:1706" ph="..." />
-            <marker date="1491502961846" expanded="true" signature="1316:1691" ph="..." />
-            <marker date="1491502961846" expanded="true" signature="1333:1677" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back-end/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="16" column="14" lean-forward="true" selection-start-line="16" selection-start-column="14" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <marker date="1491507227125" expanded="true" signature="330:366" ph="{&quot;connectionString&quot;: massiveUri...}" />
-            <marker date="1491507227125" expanded="true" signature="711:760" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back-end/db/get_watches.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="16" lean-forward="false" selection-start-line="0" selection-start-column="16" selection-end-line="0" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="26" column="6" lean-forward="true" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-          <folding>
-            <marker date="1491507311720" expanded="true" signature="62:1107" ph="{...}" />
-            <marker date="1491507311720" expanded="true" signature="98:495" ph="{...}" />
-            <marker date="1491507311720" expanded="true" signature="148:424" ph="{&quot;method&quot;: 'POST'...}" />
-            <marker date="1491507311720" expanded="true" signature="230:414" ph="{&quot;watchMake&quot;: obj.make...}" />
-            <marker date="1491507311720" expanded="true" signature="449:488" ph="{...}" />
-            <marker date="1491507311720" expanded="true" signature="532:750" ph="{...}" />
-            <marker date="1491507311720" expanded="true" signature="606:679" ph="{&quot;method&quot;: 'GET'...}" />
-            <marker date="1491507311720" expanded="true" signature="704:743" ph="{...}" />
-            <marker date="1491507311720" expanded="true" signature="793:1103" ph="{...}" />
-            <marker date="1491507311720" expanded="true" signature="882:1032" ph="{&quot;method&quot;: 'DELETE'...}" />
-            <marker date="1491507311720" expanded="true" signature="973:1022" ph="{&quot;watch_id&quot;: watchId...}" />
-            <marker date="1491507311720" expanded="true" signature="1057:1096" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back-end/db/add_watch.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="3" column="16" lean-forward="true" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back-end/db/delete_watch.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="1" column="20" lean-forward="false" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/back-end/controllers/main-controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="27" column="39" lean-forward="true" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
-          <folding>
-            <marker date="1491508862566" expanded="false" signature="0:39" ph="/** Created by Seth on 4/5/2017. ...*/" />
-            <marker date="1491508862566" expanded="true" signature="114:1485" ph="{...}" />
-            <marker date="1491508862566" expanded="true" signature="152:565" ph="{...}" />
-            <marker date="1491508862566" expanded="true" signature="202:339" ph="[...]" />
-            <marker date="1491508862566" expanded="true" signature="363:560" ph="{...}" />
-            <marker date="1491508862566" expanded="true" signature="382:504" ph="{...}" />
-            <marker date="1491508862566" expanded="true" signature="637:976" ph="{...}" />
-            <marker date="1491508862566" expanded="true" signature="739:969" ph="{...}" />
-            <marker date="1491508862566" expanded="true" signature="764:904" ph="{...}" />
-            <marker date="1491508862566" expanded="true" signature="1050:1482" ph="{...}" />
-            <marker date="1491508862566" expanded="true" signature="1197:1241" ph="[...]" />
-            <marker date="1491508862566" expanded="true" signature="1265:1475" ph="{...}" />
-            <marker date="1491508862566" expanded="true" signature="1286:1415" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/front-end/controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="22" column="50" lean-forward="false" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="50" />
+        <state relative-caret-position="380">
+          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
           <folding />
         </state>
       </provider>

@@ -1,2 +1,2 @@
 DELETE FROM watches
-WHERE watch_id = ($1);
+WHERE watch_id = ($1)

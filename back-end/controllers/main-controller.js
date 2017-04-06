@@ -44,6 +44,21 @@ module.exports = {
             }
             return res.status(200).send(results);
         })
+    },  //end of delete watch function
+
+    changeWatchInfo: function(req, res, next){
+        console.log('Changing watch info for watch number ' + req.body.id + '...');
+
+        db.edit_watch([
+            req.body.id,
+            req.body.info
+        ], function(err, results){
+            if(err){
+                console.error(err);
+                return res.status(400).send('Houston, we have a problem...')
+            }
+            return res.status(200).send('Watch info has been successfully changed.')
+        })
     }
 
 };

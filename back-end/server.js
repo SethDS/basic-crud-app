@@ -23,6 +23,8 @@ app.get('/api/getWatches', mainCtrl.getWatches); //get ALL watches
 
 app.delete('/api/deleteWatch', mainCtrl.deleteWatch); //delete a watch
 
+app.put('/api/changeWatchInfo', mainCtrl.changeWatchInfo); //change watch info
+
 app.listen(config.PORT, function() {
     console.log('Listening on port 8080...');
 });

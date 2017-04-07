@@ -3,5 +3,7 @@
  */
 angular.module('myApp').controller('watchCtrl', function($scope, mainService, $stateParams){
 
-    $scope.watch = $stateParams.id;
+    $scope.watchId = $stateParams.id;
+
+    console.log($stateParams);
 });

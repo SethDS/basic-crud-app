@@ -3,13 +3,15 @@
  */
 angular.module('myApp').controller('watchCtrl', function($scope, mainService, $stateParams){
 
-    $scope.theWatch = [];
+    $scope.theWatches = mainService.theWatches;
 
     function getOneWatch(id){
-        mainService.getOneWatch(id).then(function(response){
-            $scope.theWatch = response;
-        })
+        for (var i = 0; i < $scope.theWatches.length; i++){
+            if($scope.theWatches[i].watch_id === id){
+                $scope.theWatch = $scope.theWatches[i];
+                return;
+            }
+        }
     }
     getOneWatch($stateParams.id)
-    console.log($scope.theWatch);
 });

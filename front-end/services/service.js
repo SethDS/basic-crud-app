@@ -1,6 +1,7 @@
 angular.module('myApp').service('mainService', function($http){
 
     var theWatches = [];
+    var theWatch = [];
 
     this.addWatch = function(obj){
         console.log('yo');
@@ -28,10 +29,11 @@ angular.module('myApp').service('mainService', function($http){
             return response
         })
     };
-    this.getWatch = function(id){
+    this.getOneWatch = function(id){
         for(var i = 0; i < theWatches.length; i++){
             if(theWatches[i].watch_id === id){
-                return theWatches[i];
+                theWatch = theWatches[i];
+                return;
             }
         }
     };

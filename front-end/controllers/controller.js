@@ -1,23 +1,10 @@
 angular.module('myApp').controller('mainCtrl', function($scope, mainService){
 
-    $scope.info = true;
+
 
     $scope.addWatch = function(obj){
         console.log('yo');
         mainService.addWatch(obj).then(function(response){
-            console.log(response);
-        })
-    };
-
-    $scope.watches = [];
-
-    $scope.getWatches = function(){
-        console.log('Getting watches...');
-        mainService.getWatches().then(function(response){
-            $scope.watches = response.data;
-            for(var i = 0; i < $scope.watches.length; i++){
-                $scope.watches[i].hideInfo = true;
-            }
             console.log(response);
         })
     };

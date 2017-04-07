@@ -28,4 +28,33 @@ body{
 
 .view-watches{
     cursor: pointer;
+    font-family: 'Pinyon Script', cursive;
+    left: 50%;
+    transform: translate(-50%);
+    font-size: 5rem;
+    position: absolute;
+}
+
+.watches{
+    position: fixed;
+    /*height: 80vh;*/
+    width: 70vw;
+    top: 20vh;
+
+    margin-left: 15vw;
+    /*margin-right: auto;*/
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.collection-watch{
+    transition-duration: .5s;
+}
+.collection-watch:hover {
+    z-index: 10;
+    margin-left: 10%;
+    margin-right: 10%;
 }

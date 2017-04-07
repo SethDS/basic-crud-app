@@ -1,0 +1,22 @@
+<div class="main-container">
+
+    <img class="background" src="./img/frank-park-39270.jpg">
+
+    <h2 class="view-watches" ng-click="getWatches()">View Watches</h2>
+
+<div class="watches">
+
+    <form>
+    <h4>Filter By:</h4>
+    <select ng-model="filterOp" ng-options="watch.make for watch in watches">
+        <option value="">--Choose Make--</option>
+    </select>
+    </form>
+
+    <div ng-repeat="watch in watches | filter:filterOp">
+        <h4>{{watch.make}}</h4>
+            <img src="{{watch.image_link}}" class="collection-watch" ui-sref="watch" ui-sref='collection({id: watch.id})'><br>
+    </div>
+</div>
+
+</div>

@@ -3,7 +3,6 @@
  */
 var app = require('../server');
 var db = app.get('db');
-var theWatches = [];
 
 module.exports = {
 
@@ -33,6 +32,18 @@ module.exports = {
                 return res.status(200).send(results);
           })
     },  //end of getWatches function
+
+    getOneWatch: function(req, res, next){
+      db.get_one_watch([
+          req.body.id
+      ], function(err, results){
+          if(err){
+              console.error(err);
+              return res.status(400).send('Houston, we have a problem...')
+          }
+          return res.status(200).send(results);
+      })
+    },
 
     deleteWatch: function(req, res, next){
         console.log(req.headers.watch_id);

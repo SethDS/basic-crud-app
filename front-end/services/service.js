@@ -1,6 +1,5 @@
 angular.module('myApp').service('mainService', function($http){
 
-    this.theWatches = [];
 
     this.addWatch = function(obj){
         console.log('yo');
@@ -25,6 +24,18 @@ angular.module('myApp').service('mainService', function($http){
             url: '/api/getWatches'
         }).then(function(response){
             theWatches = response.data;
+            return response
+        })
+    };
+
+    this.getOneWatch = function (id) {
+        return $http({
+            method: 'GET',
+            url: '/api/getOneWatch',
+            data: {
+                id: id
+            }
+        }).then(function(response){
             return response
         })
     };

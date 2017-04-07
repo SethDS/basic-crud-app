@@ -20,6 +20,7 @@ var mainCtrl = require('./controllers/main-controller');
 
 app.post('/api/addWatch', mainCtrl.addWatch); //add new watch
 app.get('/api/getWatches', mainCtrl.getWatches); //get ALL watches
+app.get('/api/getOneWatch', mainCtrl.getOneWatch); //get ONE watch
 
 app.delete('/api/deleteWatch', mainCtrl.deleteWatch); //delete a watch
 

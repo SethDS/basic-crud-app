@@ -4,7 +4,6 @@ body{
 
 .main-container{
     position: absolute;
-    height: 100%;
     width: 100%;
 }
 
@@ -17,7 +16,7 @@ body{
 }
 
 .heading{
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -120%);
@@ -36,7 +35,7 @@ body{
 }
 
 .watches{
-    position: fixed;
+    position: absolute;
     /*height: 80vh;*/
     width: 70vw;
     top: 20vh;
@@ -81,7 +80,7 @@ body{
 }
 
 .add-watch{
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

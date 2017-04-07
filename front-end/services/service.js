@@ -23,7 +23,6 @@ angular.module('myApp').service('mainService', function($http){
             method: 'GET',
             url: '/api/getWatches'
         }).then(function(response){
-            theWatches = response.data;
             return response
         })
     };

@@ -58,3 +58,31 @@ body{
     margin-left: 10%;
     margin-right: 10%;
 }
+
+.nav-bar{
+    position: fixed;
+    width: 100%;
+    height: 5vh;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-bar-inner{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+.navs{
+    width: 20vw;
+    cursor: pointer;
+}
+
+.add-watch{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

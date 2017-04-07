@@ -31,7 +31,7 @@ angular.module('myApp').service('mainService', function($http){
     this.getOneWatch = function (id) {
         return $http({
             method: 'GET',
-            url: '/api/getOneWatch',
+            url: '/api/getOneWatch/' + id,
             data: {
                 id: id
             }

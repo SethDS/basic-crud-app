@@ -1,2 +1,4 @@
 SELECT * FROM watches
-WHERE watch_id = $1;
+    INNER JOIN watch_info
+        ON watches.watch_id = watch_info.watch_id
+WHERE watches.watch_id = $1;

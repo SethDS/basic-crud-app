@@ -35,7 +35,7 @@ module.exports = {
 
     getOneWatch: function(req, res, next){
       db.get_one_watch([
-          req.body.id
+          req.params.id
       ], function(err, results){
           if(err){
               console.error(err);

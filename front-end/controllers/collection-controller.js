@@ -17,15 +17,4 @@ angular.module('myApp').controller('colCtrl', function($scope, mainService){
         })
     };
 
-    $scope.getOneWatch = function(id){
-        console.log(id);
-        console.log($scope.watches);
-        for (var i = 0; i < $scope.watches.length; i++){
-            console.log($scope.watches[i].watch_id);
-            if($scope.watches[i].watch_id === id){
-                $scope.theWatch = $scope.watches[i];
-            }
-        }
-        console.log($scope.theWatch);
-    };
 });

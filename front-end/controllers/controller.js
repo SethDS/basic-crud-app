@@ -1,14 +1,6 @@
 angular.module('myApp').controller('mainCtrl', function($scope, mainService){
 
 
-
-    $scope.addWatch = function(obj){
-        console.log('yo');
-        mainService.addWatch(obj).then(function(response){
-            console.log(response);
-        })
-    };
-
     $scope.deleteWatch = function (id) {
         mainService.deleteWatch(id).then(function (response) {
             if(response.status === 200){

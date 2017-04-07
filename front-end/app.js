@@ -16,7 +16,7 @@ angular.module('myApp', ['ui.router']).config(function($stateProvider, $urlRoute
         .state('watch', {
             url: '/collection/:id',
             templateUrl: './views/watch.html',
-            controller: 'watchCtrl'
+            controller: 'colCtrl'
         })
         .state('manage',{
             url: '/manage',

@@ -15,7 +15,7 @@
 
     <div ng-repeat="watch in watches | filter:filterOp">
         <h4>{{watch.make}}</h4>
-            <img src="{{watch.image_link}}" class="collection-watch" ui-sref="watch" ui-sref='collection({id: watch.watch_id})'><br>
+            <img src="{{watch.image_link}}" class="collection-watch" ui-sref='watch({id: watch.watch_id})'><br>
     </div>
 </div>
 

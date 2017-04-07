@@ -3,8 +3,10 @@
  */
 var app = require('../server');
 var db = app.get('db');
+var theWatches = [];
 
 module.exports = {
+
   addWatch: function(req, res, next){
       console.log(req.body);
       db.add_watch([
@@ -28,7 +30,7 @@ module.exports = {
                     console.error(err);
                     return res.status(400).send('Houston, we have a problem...')
                 }
-                return res.status(200).send(results)
+                return res.status(200).send(results);
           })
     },  //end of getWatches function
 

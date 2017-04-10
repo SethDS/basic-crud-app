@@ -18,12 +18,7 @@ angular.module('myApp').directive('addWatchDir', function(){
             };
         },
         link: function(scope, element, attr){
-            element.button.on('click', function(event){
-                element.innerHTML('You have added a watch.');
-                element.css({
-                    color: 'red'
-                })
-            })
+
         }
     }
 });

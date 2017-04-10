@@ -14,11 +14,19 @@ angular.module('myApp').directive('addWatchDir', function(){
                     if(response.status === 200){
                         alert('Watch added.')
                     }
-                })
-            };
-        },
-        link: function(scope, element, attr){
+                });
 
+                $scope.deleteWatch = function (id) {
+                    mainService.deleteWatch(id).then(function (response) {
+                        if(response.status === 200){
+                            alert('The watch has been deleted.')
+                        }
+
+                        $scope.getWatches();
+                    })
+                };
+
+            };
         }
     }
 });
